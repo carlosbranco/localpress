@@ -154,3 +154,14 @@ function isCurrentProject($current_project, $project)
 {
     return $current_project == name(basename($project));
 }
+
+function moveToTrash()
+{
+   if( !isset($_GET['trash'] ) ){
+        return false;
+   }
+
+   if( file_exists( PROJECTS_FOLDER . '/' . $_GET['trash'] . '.txt') ){
+        
+   }
+}
